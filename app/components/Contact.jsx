@@ -1,5 +1,5 @@
 "use client"
-import { useState, useRef } from "react"
+import { useState, useEffect } from "react"
 import { useForm, ValidationError } from "@formspree/react"
 import { CheckCircle, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -14,15 +14,19 @@ export default function Contact() {
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
 
-    const handleFormSubmit = async (event) => {
-        event.preventDefault()
-        await handleSubmit(event)
+    // Reset form fields when form submission succeeds
+    useEffect(() => {
         if (state.succeeded) {
-            setSuccessMessage("Thanks for reaching out! I'll get back to you soon.")
+            setSuccessMessage("Thanks for contacting me! I'll get back to you soon.")
             setName("")
             setEmail("")
             setMessage("")
         }
+    }, [state.succeeded])
+
+    const handleFormSubmit = async (event) => {
+        event.preventDefault()
+        await handleSubmit(event)
     }
 
     return (
