@@ -43,7 +43,7 @@ export default function Header() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex space-x-6 lg:space-x-8">
-                    {["home", "about", "skills", "projects", "blog", "contact", "gavotz"].map((item) => (
+                    {["home", "about", "skills", "projects", "blog", "contact",].map((item) => (
                         <button
                             key={item}
                             onClick={() => scrollToSection(item)}

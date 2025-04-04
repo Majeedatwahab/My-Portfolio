@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Hero() {
     const [typedText, setTypedText] = useState("")
-    const fullText = "FRONTEND DEVELOPER"
+    const fullText = "FRONTEND ENGINEER"
     const typingSpeed = 100
 
     useEffect(() => {
@@ -67,15 +67,16 @@ export default function Hero() {
                         </Button>
                     </a>
                 </div>
+                
             </div>
 
-            <button
+            {/* <button
                 onClick={scrollToAbout}
                 className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
                 aria-label="Scroll down"
             >
-                <ArrowDown className="h-8 w-8 sm:h-10 sm:w-10 text-purple-500" />
-            </button>
+                <ArrowDown className="h-8 w-8 sm:h-10 sm:w-10 text-purple-500 " />
+            </button>*/}
         </section>
     )
 }

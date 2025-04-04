@@ -56,14 +56,14 @@ export default function Projects() {
             "image": "/assets/cafe-landing-page.png",
             "category": "web",
             "technologies": ["React", "Tailwind CSS"],
-            "demoUrl": "https://your-coffee-landing-page-link.com/",
-            "githubUrl": "https://github.com/Majeedatwahab/coffee-landing-page",
+            "demoUrl": "https://bean-scene-coffee-landing-page.vercel.app/",
+            "githubUrl": "https://github.com/Majeedatwahab/bean-scene-coffee-landing-page",
             "fullDescription":
                 "Bean-Scene Coffee Landing Page is a visually engaging and fully responsive website that highlights premium coffee blends, features a beautifully designed menu, and encourages customer engagement through intuitive UI elements. Optimized for performance and accessibility, ensuring a delightful user experience."
         },
         {
             "id": 5,
-            "title": " Drift Aura",
+            "title": " Drift Aura Sportscar Website",
             "description": "A visually stunning sports car showcase website featuring high-performance vehicles and immersive user experience.",
             "image": "/assets/mclaren-1.jpg",
             "category": "web",
