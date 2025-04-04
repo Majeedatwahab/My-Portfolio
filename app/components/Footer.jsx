@@ -54,11 +54,11 @@ export default function Footer() {
                                     <span className="block">Nigeria</span>
                                 </li>
                                 <li>
-                                    <a href="mailto:alex@example.com" className="text-gray-400 hover:text-purple-400 transition-colors">
+                                    <a href="mailto:majeedatabdulwahabayo@gmail.com" className="text-gray-400 break-all sm:break-keeph over:text-purple-400 transition-colors">
                                         majeedatabdulwahabayo@gmail.com
                                     </a>
                                 </li>
-                                
+                               
                             </ul>
                         </div>
                     </div>

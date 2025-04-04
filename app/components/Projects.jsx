@@ -1,5 +1,5 @@
 "use client"
-
+import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
@@ -19,7 +19,7 @@ export default function Projects() {
             description: "A modern eCommerce website for furniture shopping.",
             image: "/assets/furniro-website.png",
             category: "web",
-            technologies: ["React", "Next.js", "Tailwind CSS", "Stripe API"],
+            technologies: ["React", "Next.js", "Tailwind CSS"],
             demoUrl: "https://furniro-ecommerce-website.vercel.app/",
             githubUrl: "https://github.com/Majeedatwahab/Furniro-Ecommerce-Website",
             fullDescription:
@@ -31,7 +31,7 @@ export default function Projects() {
             description: "A blogging website for content creators.",
             image: "/assets/chatter-maeuve.jpeg",
             category: "web",
-            technologies: ["React", "Next.js", "MongoDB", "Tailwind CSS"],
+            technologies: ["React", "Next.js", "Firebase", "Tailwind CSS"],
             demoUrl: "https://chatter-mauve-six.vercel.app/",
             githubUrl: "https://github.com/Majeedatwahab/chatter",
             fullDescription:
@@ -44,7 +44,7 @@ export default function Projects() {
             image: "/assets/ai-learning-companion.png",
             category: "web",
             technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel AI Chatbot", "Gemini AI API"],
-            demoUrl: "https://your-project-live-link.com/",
+            demoUrl: "https://my-vercel-ai-chatbot.vercel.app/",
             githubUrl: "https://github.com/Majeedatwahab/ai-learning-companion",
             fullDescription:
                 "AI Learning Companion is a smart educational assistant that provides interactive learning experiences, personalized study materials, and AI-driven recommendations to enhance knowledge retention.",
@@ -129,10 +129,10 @@ export default function Projects() {
                                 </div>
                                 <div className="flex gap-3">
                                     <Button variant="default" size="sm" className="bg-gradient-to-r from-purple-600 to-cyan-600 flex-1" asChild>
-                                        <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                                        <Link href={`/projects/${project.id}`}  rel="noopener noreferrer">
                                             <ExternalLink className="h-4 w-4 mr-2" />
-                                            Live Demo
-                                        </a>
+                                            Read More
+                                        </Link>
                                     </Button>
                                     <Button variant="outline" size="sm" className="border-purple-500 hover:bg-purple-500/20 text-black hover:text-white" asChild>
                                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
