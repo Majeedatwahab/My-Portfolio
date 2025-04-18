@@ -65,14 +65,27 @@ export default function Projects() {
             "id": 5,
             "title": " Drift Aura Sportscar Website",
             "description": "A visually stunning sports car showcase website featuring high-performance vehicles and immersive user experience.",
-            "image": "/assets/mclaren-1.jpg",
+            "image": "/assets/drift-aura.png",
             "category": "web",
-            "technologies": ["React", "Next.js", "Tailwind CSS"],
-            "demoUrl": "https://your-project-live-link.com/",
-            "githubUrl": "https://github.com/Majeedatwahab/mj-sports-cars",
+            "technologies": ["React", "Next.js", "Tailwind CSS", "Swiperjs"],
+            "demoUrl": "https://drift-aura-car-site.vercel.app/",
+            "githubUrl": "https://github.com/Majeedatwahab/drift-aura-sports-cars",
             "fullDescription":
                 "Drift Aura is a sleek and dynamic web experience that showcases high-end sports cars with stunning visuals, detailed specifications, and an engaging UI. Designed for car enthusiasts, this platform offers a seamless browsing experience with smooth animations, interactive elements, and a modern aesthetic."
+        },
+        {
+            "id": 6,
+            "title": "Virtual Health Assistant Dashboard",
+            "description": "A comprehensive dashboard designed to manage medical tasks, appointments, and patient data, all in one place with an intuitive user interface.",
+            "image": "/assets/medical-dashboard.png",
+            "category": "web",
+            "technologies": ["React", "Tailwind CSS", "Chart.js"],
+            "demoUrl": "https://medical-dashboard-web.netlify.app/",
+            "githubUrl": "https://github.com/Majeedatwahab/medical-dashboard",
+            "fullDescription":
+                "The Virtual Medical Assistant Dashboard offers a user-friendly and interactive interface for managing patient data, medical records, and appointment scheduling. It features dynamic charts and real-time updates to ensure smooth tracking of appointments, patient history, and medical tasks. Ideal for healthcare professionals, this dashboard enhances efficiency and provides a seamless digital solution to manage medical practices."
         }
+
 
     ];
 

@@ -73,17 +73,33 @@ const projects = [
         id: 5,
         title: "Drift Aura Sportscar Website",
         description: "A visually stunning sports car showcase website featuring high-performance vehicles and immersive user experience.",
-        image: "/assets/furniro-website.png", 
+        image: "/assets/drift-aura.png", 
         fullDescription:
             "Drift Aura is a sleek landing page showcasing the power and beauty of sports cars.",
         technologies: ["React", "Next.js", "Tailwind CSS"],
-        demoUrl: "https://furniro-ecommerce-website.vercel.app/",
-        githubUrl: "https://github.com/Majeedatwahab/Furniro-Ecommerce-Website",
+        demoUrl: "https://drift-aura-car-site.vercel.app/",
+        githubUrl: "https://github.com/Majeedatwahab/drift-aura-sports-cars",
         purpose: "To practice building visually-rich hero sections and showcase animations and transitions.",
         features: "Full-page hero, image/video backgrounds, car feature sections, 'Buy Now' call to action.",
         TechnicalHurdles: "Handling video integration and optimizing performance on load.",
         LessonsLearned: "Learned how to structure media-heavy pages for performance and impact.",
     },
+    {
+        "id": 6,
+        "title": "Virtual Health Assistant Dashboard",
+        "description": "A virtual assistant dashboard designed to help healthcare professionals manage patient data, appointments, and treatment schedules efficiently.",
+        "image": "/assets/medical-dashboard.png",
+        "fullDescription": "The Medical Virtual Assistant is a comprehensive dashboard that streamlines healthcare management tasks. It enables healthcare providers to easily track patient data, schedule appointments, and access important medical records. The assistant’s intuitive design ensures a smooth and efficient workflow for users, with real-time notifications and interactive features that enhance user experience. Please note that this project is a UI recreation and is not fully functional at the moment.",
+        "technologies": ["React", "Chart.js", "Tailwind CSS"],
+        "demoUrl": "https://medical-dashboard-web.netlify.app/",
+        "githubUrl": "https://github.com/Majeedatwahab/medical-dashboard",
+        "purpose": "To create a tool for healthcare professionals to streamline patient management and improve workflow efficiency. The project focuses on UI design and layout rather than full functionality.",
+        "features": "Patient data management, appointment scheduling, treatment plan tracking, real-time notifications, interactive charts for patient statistics.",
+        "TechnicalHurdles": "Integrating real-time data updates and ensuring smooth performance across all features.",
+        "LessonsLearned": "Gained experience in building complex, data-driven dashboards and optimizing user experience for healthcare environments."
+    }
+
+
 ];
 
 export default function ProjectDetail() {
