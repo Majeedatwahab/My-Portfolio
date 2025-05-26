@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaGithub, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaGithub, FaReact, } from "react-icons/fa";
 
-import { SiTailwindcss, SiShadcnui, SiTypescript, SiNextdotjs, SiCypress, SiJest, SiChartdotjs, SiSupabase, SiFirebase } from "react-icons/si";
+import { SiTailwindcss, SiShadcnui, SiTypescript, SiNextdotjs, SiCypress, SiJest, SiChartdotjs, SiSupabase, SiFirebase, SiRedux } from "react-icons/si";
 
 const skillsData = [
     { id: "1", title: "HTML5", icon: <FaHtml5 className="h-6 w-6 text-orange-500" /> },
@@ -21,6 +21,7 @@ const skillsData = [
     { id: "13", title: "Chart.js", icon: <SiChartdotjs className="h-6 w-6 text-pink-500" /> },
     { id: "14", title: "Firebase", icon: <SiFirebase className="h-6 w-6 text-yellow-400" /> },
     { id: "15", title: "Supabase", icon: <SiSupabase className="h-6 w-6 text-green-400" /> },
+    { id: "16", title: "Redux", icon: <SiRedux className="h-6 w-6 text-purple-400" /> },
     
 ];
 
