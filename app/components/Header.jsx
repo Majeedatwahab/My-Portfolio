@@ -42,12 +42,12 @@ export default function Header() {
                 </Link>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden md:flex space-x-6 lg:space-x-8">
+                <nav className="hidden md:flex space-x-6 lg:space-x-8 ">
                     {["home", "about", "skills", "projects", "blog", "contact",].map((item) => (
                         <button
                             key={item}
                             onClick={() => scrollToSection(item)}
-                            className="text-gray-300 hover:text-white uppercase text-xs sm:text-sm lg:text-base tracking-wider transition-colors"
+                            className="text-gray-300 hover:text-white uppercase text-xs sm:text-sm lg:text-base tracking-wider transition-colors cursor-pointer"
                         >
                             {item}
                         </button>
@@ -73,7 +73,7 @@ export default function Header() {
                             <button
                                 key={item}
                                 onClick={() => scrollToSection(item)}
-                                className="text-gray-300 hover:text-white uppercase text-base sm:text-lg tracking-wider transition-colors"
+                                className="text-gray-300 hover:text-white uppercase text-base sm:text-lg tracking-wider transition-colors cursor-pointer"
                             >
                                 {item}
                             </button>

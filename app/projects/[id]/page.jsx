@@ -97,7 +97,23 @@ const projects = [
         "features": "Patient data management, appointment scheduling, treatment plan tracking, real-time notifications, interactive charts for patient statistics.",
         "TechnicalHurdles": "Integrating real-time data updates and ensuring smooth performance across all features.",
         "LessonsLearned": "Gained experience in building complex, data-driven dashboards and optimizing user experience for healthcare environments."
+    },
+
+    {
+        "id": 7,
+        "title": "GitHub User Search",
+        "description": "A responsive web app that allows users to search GitHub profiles and view detailed information such as repositories, followers, and activity.",
+        "image": "/assets/github-user-search.png",
+        "fullDescription": "The GitHub User Search app provides an intuitive interface for exploring GitHub profiles. Users can enter a GitHub username and instantly view profile details, repositories, followers, and following stats. Built with React and Tailwind CSS, the application is fully responsive and optimized for smooth performance. API integration ensures real-time data fetching from GitHub, while clean UI design enhances the overall user experience.",
+        "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS", "GitHub API",],
+        "demoUrl": "https://github-user-search-xi-orcin.vercel.app/",
+        "githubUrl": "https://github.com/Majeedatwahab/github-user-search",
+        "purpose": "To practice API integration, responsive design, and modern front-end development workflows while building a practical tool for exploring GitHub profiles.",
+        "features": "Search by GitHub username, real-time data fetching via GitHub API, profile overview with repositories and followers, responsive UI across devices, error handling for invalid usernames.",
+        "TechnicalHurdles": "Managing API rate limits and ensuring smooth rendering of dynamic data from GitHub.",
+        "LessonsLearned": "Strengthened skills in API integration, responsive design, and error handling while improving user experience with clean and maintainable code."
     }
+
 
 
 ];

@@ -84,7 +84,22 @@ export default function Projects() {
             "githubUrl": "https://github.com/Majeedatwahab/medical-dashboard",
             "fullDescription":
                 "The Virtual Medical Assistant Dashboard offers a user-friendly and interactive interface for managing patient data, medical records, and appointment scheduling. It features dynamic charts and real-time updates to ensure smooth tracking of appointments, patient history, and medical tasks. Ideal for healthcare professionals, this dashboard enhances efficiency and provides a seamless digital solution to manage medical practices."
+        },
+
+        {
+        
+            "id": 7,
+            "title": "Github User Search",
+            "description": "A sleek and responsive web app that allows users to search GitHub profiles and view detailed information such as repositories, followers, and activity.",
+            "image": "/assets/github-user-search.png",
+            "category": "web",
+            "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS", "GitHub API", ],
+            "demoUrl": "https://github-user-search-xi-orcin.vercel.app/",
+            "githubUrl": "https://github.com/Majeedatwahab/github-user-search",
+            "fullDescription": "The GitHub User Search app provides an intuitive way to explore GitHub profiles in real-time. Users can search for any GitHub username and instantly view details such as profile info, repositories, followers, and following count. Built with React and styled using Tailwind CSS, the application is fully responsive and optimized for a smooth user experience. With clean UI and dynamic data fetching from the GitHub API, this project demonstrates practical API integration, responsive design, and modern front-end development practices."
         }
+
+
 
 
     ];
