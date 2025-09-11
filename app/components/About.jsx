@@ -77,7 +77,7 @@ export default function About() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="https://tinyurl.com/mr2sbrxj"
+                href="https://majeedat.cv"
                 target="_blank"
                 className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white font-semibold rounded-md flex items-center justify-center px-6 py-3"
               >
