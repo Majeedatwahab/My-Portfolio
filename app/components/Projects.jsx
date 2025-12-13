@@ -13,18 +13,20 @@ export default function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
 
     const projects = [
+
         {
-            id: 1,
-            title: "Furniro",
-            description: "A modern eCommerce website for furniture shopping.",
-            image: "/assets/furniro-website.png",
-            category: "web",
-            technologies: ["React", "Next.js", "Tailwind CSS"],
-            demoUrl: "https://furniro-ecommerce-website.vercel.app/",
-            githubUrl: "https://github.com/Majeedatwahab/Furniro-Ecommerce-Website",
-            fullDescription:
-                "Furniro is a sleek and user-friendly eCommerce platform for purchasing furniture online. It features seamless navigation, secure payments, and an engaging shopping experience.",
+            "id": 1,
+            "title": "Bean-Scene Coffee Landing Page",
+            "description": "A sleek and modern coffee shop landing page designed to attract customers with an inviting UI and seamless navigation.",
+            "image": "/assets/cafe-landing-page.png",
+            "category": "web",
+            "technologies": ["React", "Tailwind CSS"],
+            "demoUrl": "https://bean-scene-coffee-landing-page.vercel.app/",
+            "githubUrl": "https://github.com/Majeedatwahab/bean-scene-coffee-landing-page",
+            "fullDescription":
+                "Bean-Scene Coffee Landing Page is a visually engaging and fully responsive website that highlights premium coffee blends, features a beautifully designed menu, and encourages customer engagement through intuitive UI elements. Optimized for performance and accessibility, ensuring a delightful user experience."
         },
+
         {
             id: 2,
             title: "Chatter",
@@ -37,32 +39,22 @@ export default function Projects() {
             fullDescription:
                 "Chatter is a blogging platform that allows users to write, share, and engage with content. Features include user authentication, a rich text editor, and real-time comments.",
         },
+
         {
-            id: 3,
-            title: "AI Learning Companion",
-            description: "An AI-powered learning assistant for interactive education.",
-            image: "/assets/ai-learning-companion.png",
-            category: "web",
-            technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel AI Chatbot", "Gemini AI API"],
-            demoUrl: "https://my-vercel-ai-chatbot.vercel.app/",
-            githubUrl: "https://github.com/Majeedatwahab/ai-learning-companion",
-            fullDescription:
-                "AI Learning Companion is a smart educational assistant that provides interactive learning experiences, personalized study materials, and AI-driven recommendations to enhance knowledge retention.",
+
+            "id": 3,
+            "title": "Github User Search",
+            "description": "A sleek and responsive web app that allows users to search GitHub profiles and view detailed information such as repositories, followers, and activity.",
+            "image": "/assets/github-user-search.png",
+            "category": "web",
+            "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS", "GitHub API",],
+            "demoUrl": "https://github-user-search-xi-orcin.vercel.app/",
+            "githubUrl": "https://github.com/Majeedatwahab/github-user-search",
+            "fullDescription": "The GitHub User Search app provides an intuitive way to explore GitHub profiles in real-time. Users can search for any GitHub username and instantly view details such as profile info, repositories, followers, and following count. Built with React and styled using Tailwind CSS, the application is fully responsive and optimized for a smooth user experience. With clean UI and dynamic data fetching from the GitHub API, this project demonstrates practical API integration, responsive design, and modern front-end development practices."
         },
+
         {
             "id": 4,
-            "title": "Bean-Scene Coffee Landing Page",
-            "description": "A sleek and modern coffee shop landing page designed to attract customers with an inviting UI and seamless navigation.",
-            "image": "/assets/cafe-landing-page.png",
-            "category": "web",
-            "technologies": ["React", "Tailwind CSS"],
-            "demoUrl": "https://bean-scene-coffee-landing-page.vercel.app/",
-            "githubUrl": "https://github.com/Majeedatwahab/bean-scene-coffee-landing-page",
-            "fullDescription":
-                "Bean-Scene Coffee Landing Page is a visually engaging and fully responsive website that highlights premium coffee blends, features a beautifully designed menu, and encourages customer engagement through intuitive UI elements. Optimized for performance and accessibility, ensuring a delightful user experience."
-        },
-        {
-            "id": 5,
             "title": " Drift Aura Sportscar Website",
             "description": "A visually stunning sports car showcase website featuring high-performance vehicles and immersive user experience.",
             "image": "/assets/drift-aura.png",
@@ -73,8 +65,36 @@ export default function Projects() {
             "fullDescription":
                 "Drift Aura is a sleek and dynamic web experience that showcases high-end sports cars with stunning visuals, detailed specifications, and an engaging UI. Designed for car enthusiasts, this platform offers a seamless browsing experience with smooth animations, interactive elements, and a modern aesthetic."
         },
+        /*
         {
-            "id": 6,
+            id: 5,
+            title: "Furniro",
+            description: "A modern eCommerce website for furniture shopping.",
+            image: "/assets/furniro-website.png",
+            category: "web",
+            technologies: ["React", "Next.js", "Tailwind CSS"],
+            demoUrl: "https://furniro-ecommerce-website.vercel.app/",
+            githubUrl: "https://github.com/Majeedatwahab/Furniro-Ecommerce-Website",
+            fullDescription:
+                "Furniro is a sleek and user-friendly eCommerce platform for purchasing furniture online. It features seamless navigation, secure payments, and an engaging shopping experience.",
+        },
+        
+        {
+            id: 6,
+            title: "AI Learning Companion",
+            description: "An AI-powered learning assistant for interactive education.",
+            image: "/assets/ai-learning-companion.png",
+            category: "web",
+            technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel AI Chatbot", "Gemini AI API"],
+            demoUrl: "https://my-vercel-ai-chatbot.vercel.app/",
+            githubUrl: "https://github.com/Majeedatwahab/ai-learning-companion",
+            fullDescription:
+                "AI Learning Companion is a smart educational assistant that provides interactive learning experiences, personalized study materials, and AI-driven recommendations to enhance knowledge retention.",
+        },
+        
+        
+        {
+            "id": 7,
             "title": "Virtual Health Assistant Dashboard",
             "description": "A comprehensive dashboard designed to manage medical tasks, appointments, and patient data, all in one place with an intuitive user interface.",
             "image": "/assets/medical-dashboard.png",
@@ -84,20 +104,9 @@ export default function Projects() {
             "githubUrl": "https://github.com/Majeedatwahab/medical-dashboard",
             "fullDescription":
                 "The Virtual Medical Assistant Dashboard offers a user-friendly and interactive interface for managing patient data, medical records, and appointment scheduling. It features dynamic charts and real-time updates to ensure smooth tracking of appointments, patient history, and medical tasks. Ideal for healthcare professionals, this dashboard enhances efficiency and provides a seamless digital solution to manage medical practices."
-        },
-
-        {
-        
-            "id": 7,
-            "title": "Github User Search",
-            "description": "A sleek and responsive web app that allows users to search GitHub profiles and view detailed information such as repositories, followers, and activity.",
-            "image": "/assets/github-user-search.png",
-            "category": "web",
-            "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS", "GitHub API", ],
-            "demoUrl": "https://github-user-search-xi-orcin.vercel.app/",
-            "githubUrl": "https://github.com/Majeedatwahab/github-user-search",
-            "fullDescription": "The GitHub User Search app provides an intuitive way to explore GitHub profiles in real-time. Users can search for any GitHub username and instantly view details such as profile info, repositories, followers, and following count. Built with React and styled using Tailwind CSS, the application is fully responsive and optimized for a smooth user experience. With clean UI and dynamic data fetching from the GitHub API, this project demonstrates practical API integration, responsive design, and modern front-end development practices."
         }
+*/
+        
 
 
 

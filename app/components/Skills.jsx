@@ -1,29 +1,36 @@
 "use client";
 
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaGithub, FaReact, } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaGithub, FaReact, FaUniversalAccess, FaBug } from "react-icons/fa";
+import { BiNetworkChart, BiDevices } from "react-icons/bi";
+import {  } from "react-icons/bi";
 
-import { SiTailwindcss, SiShadcnui, SiTypescript, SiNextdotjs, SiCypress, SiJest, SiChartdotjs, SiSupabase, SiFirebase, SiRedux } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs,  } from "react-icons/si";
+import { LiaRocketSolid } from "react-icons/lia";
+
 
 const skillsData = [
-    { id: "1", title: "HTML5", icon: <FaHtml5 className="h-6 w-6 text-orange-500" /> },
-    { id: "2", title: "CSS3", icon: <FaCss3Alt className="h-6 w-6 text-blue-500" /> },
-    { id: "3", title: "JavaScript", icon: <FaJs className="h-6 w-6 text-yellow-500" /> },
-    { id: "4", title: "TypeScript", icon: <SiTypescript className="h-6 w-6 text-blue-600" /> },
-    { id: "5", title: "React.js", icon: <FaReact className="h-6 w-6 text-blue-400" /> },
-    { id: "6", title: "Next.js", icon: <SiNextdotjs className="h-6 w-6 text-white" /> },
-    { id: "7", title: "TailwindCSS", icon: <SiTailwindcss className="h-6 w-6 text-cyan-500" /> },
-    { id: "8", title: "Shadcn", icon: <SiShadcnui className="h-6 w-6 text-teal-400" /> },
-    { id: "9", title: "Git", icon: <FaGitAlt className="h-6 w-6 text-red-500" /> },
-    { id: "10", title: "GitHub", icon: <FaGithub className="h-6 w-6 text-white" /> },
-    { id: "11", title: "Jest", icon: <SiJest className="h-6 w-6 text-red-500" /> },
-    { id: "12", title: "Cypress", icon: <SiCypress className="h-6 w-6 text-green-500" /> },
-    { id: "13", title: "Chart.js", icon: <SiChartdotjs className="h-6 w-6 text-pink-500" /> },
-    { id: "14", title: "Firebase", icon: <SiFirebase className="h-6 w-6 text-yellow-400" /> },
-    { id: "15", title: "Supabase", icon: <SiSupabase className="h-6 w-6 text-green-400" /> },
-    { id: "16", title: "Redux", icon: <SiRedux className="h-6 w-6 text-purple-400" /> },
-    
+   
+    { id: "1", title: "React.js", icon: <FaReact className="h-6 w-6 text-blue-400" /> },
+    { id: "2", title: "Next.js", icon: <SiNextdotjs className="h-6 w-6 text-white" /> },
+    { id: "3", title: "JavaScript (ES6+)", icon: <FaJs className="h-6 w-6 text-yellow-500" /> },
+    { id: "4", title: "HTML5", icon: <FaHtml5 className="h-6 w-6 text-orange-500" /> },
+    { id: "5", title: "CSS3", icon: <FaCss3Alt className="h-6 w-6 text-blue-500" /> },
+
+    { id: "6", title: "TailwindCSS", icon: <SiTailwindcss className="h-6 w-6 text-cyan-500" /> },
+    { id: "7", title: "Responsive Design", icon: <BiDevices className="h-6 w-6 text-cyan-500" /> },
+    { id: "8", title: "Figma to Code", icon: <FaReact className="h-6 w-6 text-purple-400" /> },
+    { id: "9", title: "UI Debugging / Bug Fixing", icon: < FaBug className="h-6 w-6 text-red-400" /> },
+    { id: "10", title: "Accessibility (a11y)", icon: <FaUniversalAccess className="h-6 w-6 text-green-400" /> },
+
+    { id: "11", title: "Git", icon: <FaGitAlt className="h-6 w-6 text-red-500" /> },
+    { id: "12", title: "GitHub", icon: <FaGithub className="h-6 w-6 text-white" /> },
+    { id: "13", title: "API Integration", icon: <BiNetworkChart className="h-6 w-6 text-blue-400" /> },
+    { id: "14", title: "Performance Optimization", icon: <LiaRocketSolid className="h-6 w-6 text-cyan-400" /> },
 ];
+
+    
+
 
 export default function Skills() {
     return (

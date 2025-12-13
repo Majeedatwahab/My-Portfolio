@@ -2,28 +2,43 @@
 
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import Link from "next/link";
+import { FaGithub, FaExternalLinkAlt, FaChevronRight } from "react-icons/fa";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 
 const projects = [
     {
         id: 1,
-        title: "Furniro",
-        description: "A modern eCommerce website for furniture shopping.",
-        image: "/assets/furniro-website.png",
+        title: "Bean-Scene Coffee Landing Page",
+        description: "A sleek and modern coffee shop landing page designed to attract customers with an inviting UI and seamless navigation.",
+        image: "/assets/cafe-landing-page.png",
         fullDescription:
-            "Furniro is a sleek and user-friendly eCommerce platform built with performance and design in mind.",
-        technologies: ["React", "Next.js", "Tailwind CSS"],
-        demoUrl: "https://furniro-ecommerce-website.vercel.app/",
-        githubUrl: "https://github.com/Majeedatwahab/Furniro-Ecommerce-Website",
-        purpose: "To create a clean, responsive furniture store with smooth user experience and product display.",
-        features: "Shopping cart, product listing, responsive layout, product filtering.",
-        TechnicalHurdles: "Handling responsive layout and state management for the cart.",
-        LessonsLearned: "Gained hands-on experience with grid systems and dynamic routing in Next.js.",
+            "This landing page was built to promote a coffee shop's online presence and drive in-store visits.",
+        technologies: ["React", "Tailwind CSS"],
+        demoUrl: "https://bean-scene-coffee-landing-page.vercel.app/",
+        githubUrl: "https://github.com/Majeedatwahab/bean-scene-coffee-landing-page",
+        purpose: [
+            "Create an immersive landing page experience.",
+            "Showcase modern UI with clean visuals.",
+        ],
+        features: [
+            "Hero section with brand visuals",
+            "Smooth scrolling interactions",
+            "Menu preview layout",
+            "Clear call-to-action buttons",
+        ],
+        TechnicalHurdles: [
+            "Balancing the layout across all screen sizes",
+            "Maintaining sharp image quality while optimizing load time",
+        ],
+        LessonsLearned: [
+            "Improved Tailwind component structuring",
+            "Mastered gradient overlays for hero sections",
+        ],
     },
+
     {
         id: 2,
         title: "Chatter",
@@ -34,88 +49,76 @@ const projects = [
         technologies: ["React", "Next.js", "Firebase", "Tailwind CSS"],
         demoUrl: "https://chatter-mauve-six.vercel.app/",
         githubUrl: "https://github.com/Majeedatwahab/chatter",
-        purpose: "To allow users to express themselves through blogs in an easy-to-use platform.",
-        features: "Authentication, post creation/editing, blog feed, category filtering.",
-        TechnicalHurdles: "Integrating Firebase authentication and data structure planning.",
-        LessonsLearned: "Gained confidence in Firebase integration and managing app state with dynamic content.",
+        purpose: ["Provide a platform for content creators to share ideas."],
+        features: [
+            "Authentication system",
+            "Post creation and editing",
+            "Category filtering",
+            "Dynamic blog feed",
+        ],
+        TechnicalHurdles: [
+            "Firebase authentication integration",
+            "Structuring Firestore data",
+        ],
+        LessonsLearned: [
+            "Handling dynamic content with Firebase",
+            "Confidence in building full auth flows",
+        ],
     },
+
     {
         id: 3,
-        title: "AI Learning Companion",
-        description: "An AI-powered learning assistant for interactive education.",
-        image: "/assets/ai-learning-companion.png",
+        title: "GitHub User Search",
+        description: "A responsive web app that allows users to search GitHub profiles and view detailed information.",
+        image: "/assets/github-user-search.png",
         fullDescription:
-            "AI Learning Companion provides interactive learning via AI-powered conversations and dynamic learning cards.",
-        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel AI Chatbot", "Gemini AI API"],
-        demoUrl: "https://my-vercel-ai-chatbot.vercel.app/",
-        githubUrl: "https://github.com/Majeedatwahab/ai-learning-companion",
-        purpose: "To help learners study more interactively using an AI-powered chatbot.",
-        features: "AI chatbot, topic-based learning cards, overview/concepts/explore sections, carousel UI.",
-        TechnicalHurdles: "Making AI responses work within a structured UI and managing user input logic.",
-        LessonsLearned: "Deepened my understanding of conversational UI and using generative AI in web apps.",
+            "Users can enter a GitHub username and instantly view real-time profile details.",
+        technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "GitHub API"],
+        demoUrl: "https://github-user-search-xi-orcin.vercel.app/",
+        githubUrl: "https://github.com/Majeedatwahab/github-user-search",
+        purpose: ["Practice API integration and responsive UI design."],
+        features: [
+            "Search GitHub users",
+            "Real-time API data",
+            "Repository and follower details",
+            "Mobile-first responsive layout",
+        ],
+        TechnicalHurdles: [
+            "Managing GitHub API rate limits",
+            "Handling invalid usernames gracefully",
+        ],
+        LessonsLearned: [
+            "Improved async data handling",
+            "Better TypeScript API structures",
+        ],
     },
+
     {
         id: 4,
-        title: "Bean-Scene Coffee Landing Page",
-        description: "A sleek and modern coffee shop landing page designed to attract customers with an inviting UI and seamless navigation.",
-        image: "/assets/cafe-landing-page.png",
-        fullDescription:
-            "This landing page was built to promote a coffee shop’s online presence and drive in-store visits.",
-        technologies: ["React", "Tailwind CSS"],
-        demoUrl: "https://bean-scene-coffee-landing-page.vercel.app/",
-        githubUrl: "https://github.com/Majeedatwahab/bean-scene-coffee-landing-page",
-        purpose: "To design a visually pleasing landing page that showcases the vibe of a modern coffee shop.",
-        features: "Hero section, smooth scrolling, menu preview, call-to-action buttons.",
-        TechnicalHurdles: "Perfecting the layout for both mobile and large screens.",
-        LessonsLearned: "Practiced modern UI/UX design techniques using Tailwind CSS.",
-    },
-    {
-        id: 5,
         title: "Drift Aura Sportscar Website",
-        description: "A visually stunning sports car showcase website featuring high-performance vehicles and immersive user experience.",
-        image: "/assets/drift-aura.png", 
+        description: "A visually stunning sports car showcase website.",
+        image: "/assets/drift-aura.png",
         fullDescription:
-            "Drift Aura is a sleek landing page showcasing the power and beauty of sports cars.",
+            "A sleek landing page showcasing the power and beauty of sports cars.",
         technologies: ["React", "Next.js", "Tailwind CSS"],
         demoUrl: "https://drift-aura-car-site.vercel.app/",
         githubUrl: "https://github.com/Majeedatwahab/drift-aura-sports-cars",
-        purpose: "To practice building visually-rich hero sections and showcase animations and transitions.",
-        features: "Full-page hero, image/video backgrounds, car feature sections, 'Buy Now' call to action.",
-        TechnicalHurdles: "Handling video integration and optimizing performance on load.",
-        LessonsLearned: "Learned how to structure media-heavy pages for performance and impact.",
+        purpose: ["Practice video integration & stunning hero sections."],
+        features: [
+            "Full-page hero section",
+            "Animated transitions",
+            "Car feature sections",
+            "'Buy Now' CTA design",
+        ],
+        TechnicalHurdles: [
+            "Handling heavy media assets",
+            "Optimizing page load performance",
+        ],
+        LessonsLearned: [
+            "Structuring media-heavy pages",
+            "Enhancing user experience with visual elements",
+        ],
     },
-    {
-        "id": 6,
-        "title": "Virtual Health Assistant Dashboard",
-        "description": "A virtual assistant dashboard designed to help healthcare professionals manage patient data, appointments, and treatment schedules efficiently.",
-        "image": "/assets/medical-dashboard.png",
-        "fullDescription": "The Medical Virtual Assistant is a comprehensive dashboard that streamlines healthcare management tasks. It enables healthcare providers to easily track patient data, schedule appointments, and access important medical records. The assistant’s intuitive design ensures a smooth and efficient workflow for users, with real-time notifications and interactive features that enhance user experience. Please note that this project is a UI recreation and is not fully functional at the moment.",
-        "technologies": ["React", "Chart.js", "Tailwind CSS"],
-        "demoUrl": "https://medical-dashboard-web.netlify.app/",
-        "githubUrl": "https://github.com/Majeedatwahab/medical-dashboard",
-        "purpose": "To create a tool for healthcare professionals to streamline patient management and improve workflow efficiency. The project focuses on UI design and layout rather than full functionality.",
-        "features": "Patient data management, appointment scheduling, treatment plan tracking, real-time notifications, interactive charts for patient statistics.",
-        "TechnicalHurdles": "Integrating real-time data updates and ensuring smooth performance across all features.",
-        "LessonsLearned": "Gained experience in building complex, data-driven dashboards and optimizing user experience for healthcare environments."
-    },
-
-    {
-        "id": 7,
-        "title": "GitHub User Search",
-        "description": "A responsive web app that allows users to search GitHub profiles and view detailed information such as repositories, followers, and activity.",
-        "image": "/assets/github-user-search.png",
-        "fullDescription": "The GitHub User Search app provides an intuitive interface for exploring GitHub profiles. Users can enter a GitHub username and instantly view profile details, repositories, followers, and following stats. Built with React and Tailwind CSS, the application is fully responsive and optimized for smooth performance. API integration ensures real-time data fetching from GitHub, while clean UI design enhances the overall user experience.",
-        "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS", "GitHub API",],
-        "demoUrl": "https://github-user-search-xi-orcin.vercel.app/",
-        "githubUrl": "https://github.com/Majeedatwahab/github-user-search",
-        "purpose": "To practice API integration, responsive design, and modern front-end development workflows while building a practical tool for exploring GitHub profiles.",
-        "features": "Search by GitHub username, real-time data fetching via GitHub API, profile overview with repositories and followers, responsive UI across devices, error handling for invalid usernames.",
-        "TechnicalHurdles": "Managing API rate limits and ensuring smooth rendering of dynamic data from GitHub.",
-        "LessonsLearned": "Strengthened skills in API integration, responsive design, and error handling while improving user experience with clean and maintainable code."
-    }
-
-
-
 ];
 
 export default function ProjectDetail() {
@@ -123,31 +126,40 @@ export default function ProjectDetail() {
     const project = projects.find((p) => p.id.toString() === id);
 
     if (!project) {
-     
-        return <div className="text-center text-white py-20 text-2xl">🚧 Project not found.</div>;
+        return (
+            <div className="text-center text-white py-20 text-2xl">
+                🚧 Project not found.
+            </div>
+        );
     }
 
     return (
         <section className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white px-6 md:px-12 py-16 md:py-24">
             <div className="max-w-6xl mx-auto">
-                <div className=" flex items-center justify-between">
+
+                {/* HEADER */}
+                <div className="flex items-center justify-between">
                     <Link
                         href="/"
                         className="text-xl sm:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500"
                     >
                         MJ.DEV
                     </Link>
-                    <Button asChild className="bg-gradient-to-r from-purple-600 to-cyan-600 shadow-md text-white">
-                        <Link href="/#projects">
-                            ← Back to Projects
-                        </Link>
+
+                    <Button
+                        asChild
+                        className="bg-gradient-to-r from-purple-600 to-cyan-600 shadow-md text-white"
+                    >
+                        <Link href="/#projects">← Back to Projects</Link>
                     </Button>
                 </div>
 
+                {/* TITLE */}
                 <h1 className="text-5xl font-extrabold my-6 bg-gradient-to-r from-purple-400 to-cyan-400 text-transparent bg-clip-text">
                     {project.title}
                 </h1>
 
+                {/* IMAGE + DESCRIPTION */}
                 <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
                     <div className="relative w-full overflow-hidden rounded-2xl shadow-2xl">
                         <Image
@@ -157,12 +169,11 @@ export default function ProjectDetail() {
                             height={600}
                             className="rounded-2xl object-cover"
                         />
-                        <div className="absolute inset-0 bg-black/20 rounded-2xl" />
-
                     </div>
 
                     <div>
-                        <div className="flex flex-wrap gap-3 mb-8">
+                        {/* TECH BADGES */}
+                        <div className="flex flex-wrap gap-3 mb-6">
                             {project.technologies.map((tech) => (
                                 <Badge
                                     key={tech}
@@ -202,24 +213,39 @@ export default function ProjectDetail() {
                     </div>
                 </div>
 
+                {/* DYNAMIC SECTIONS */}
                 <div className="grid gap-12">
                     {[
                         { label: "Purpose", value: project.purpose },
                         { label: "Features", value: project.features },
                         { label: "Technical Hurdles", value: project.TechnicalHurdles },
                         { label: "Lessons Learned", value: project.LessonsLearned },
-                    ].map((section) => (
-                        section.value && (
-                            <div key={section.label} className="bg-white/5 p-6 rounded-xl border border-purple-800/20 shadow-md">
-                                <h2 className="text-2xl font-semibold mb-2 text-purple-300">
-                                    {section.label}
-                                </h2>
-                                <p className="text-gray-300 text-base leading-relaxed">
-                                    {section.value}
-                                </p>
-                            </div>
-                        )
-                    ))}
+                    ].map(
+                        (section) =>
+                            section.value && (
+                                <div
+                                    key={section.label}
+                                    className="bg-white/5 p-6 rounded-xl border border-purple-800/20 shadow-md"
+                                >
+                                    <h2 className="text-2xl font-semibold mb-3 text-purple-300">
+                                        {section.label}
+                                    </h2>
+
+                                    {Array.isArray(section.value) ? (
+                                        <ul className="space-y-2 text-gray-300">
+                                            {section.value.map((item, i) => (
+                                                <li key={i} className="flex items-start gap-2">
+                                                    <FaChevronRight className="text-purple-400 mt-1" />
+                                                    <span>{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    ) : (
+                                        <p className="text-gray-300">{section.value}</p>
+                                    )}
+                                </div>
+                            )
+                    )}
                 </div>
             </div>
         </section>

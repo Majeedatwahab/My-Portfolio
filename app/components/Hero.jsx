@@ -45,15 +45,16 @@ export default function Hero() {
                         <span className="inline-block border-r-4 border-purple-500 pr-1 animate-pulse">{typedText}</span>
                     </h2>
                 </div>
-
-                <p className="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg md:text-xl mb-8 sm:mb-10">
-                    Crafting exceptional digital experiences with clean code and cutting-edge technologies. Specializing in React,
-                    Next.js, and modern frontend architecture.
+                <p className="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg md:text-xl mb-6">
+                    Crafting high-converting landing pages, responsive web apps, and seamless UI from design to deployment using React and Next.js.
+                </p>
+                <p className="max-w-2xl mx-auto text-purple-300 text-sm sm:text-base md:text-lg font-medium mb-10">
+                    • Build Your Next Landing Page • Convert Figma to Code • Fix UI Bugs
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="#projects">
-                        <Button className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-6 sm:px-8 py-4 sm:py-6 rounded-md">
+                        <Button className="bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer hover:from-purple-700 hover:to-cyan-700 text-white px-6 sm:px-8 py-4 sm:py-6 rounded-md">
                             View My Work
                         </Button>
                     </a>
@@ -63,7 +64,7 @@ export default function Hero() {
                             variant="outline"
                             className="border-purple-500 text-white hover:bg-purple-500/20 text-black hover:text-white px-6 sm:px-8 py-4 sm:py-6 rounded-md"
                         >
-                            Contact Me
+                            Hire Me
                         </Button>
                     </a>
                 </div>

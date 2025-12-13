@@ -26,31 +26,27 @@ export default function About() {
               <Image
                 src="/assets/bg-hero-image.jpeg"
                 alt="Majeedat Abdulwahab - Frontend Developer"
-                layout="fill"
+                fill
                 className="rounded-xl object-cover z-20 relative"
               />
             </div>
           </div>
 
           <div className="text-white">
-            <h3 className="text-2xl font-bold mb-4 text-purple-500">Who I Am</h3>
+            <h3 className="text-2xl font-semibold text-purple-400 mb-3">Who I Am</h3>
+
             <p className="text-gray-300 mb-6">
-              I'm a Frontend Developer with over a year of experience building
-              visually engaging and user-friendly web applications. I specialize
-              in React, Next.js, and TypeScript, creating modern interfaces that
-              blend aesthetics with functionality.
+              I'm a Frontend Developer specializing in building clean, responsive, and high-performance user interfaces. I work primarily with React and Next.js, turning ideas and designs into fast, visually polished products that feel great to use.
+
             </p>
             <p className="text-gray-300 mb-6">
-              My journey into web development began in early 2023, and since
-              then, I've worked on projects that blend aesthetic design with
-              seamless functionality. Beyond the code, I love exploring
-              innovative UI/UX solutions that enhance user experience.
+              I transitioned into web development in 2023, and since then I've built real-world projects ranging from landing pages and eCommerce experiences to interactive web apps. I’m passionate about frontend architecture, reusable components, and intuitive UI/UX that keeps users engaged.
+
             </p>
-            <h3 className="text-2xl font-bold mb-4 text-purple-500">More About Me</h3>
+            <h3 className="text-2xl font-semibold text-purple-400 mb-3">More About Me</h3>
             <p className="text-gray-300 mb-6">
-              Beyond coding, I have a love for food, cats, sports cars, and
-              plants. I value quality time with family and friends, and as an
-              introvert, I'm constantly navigating the world in my own way.
+              When I'm not coding, you'll probably find me enjoying good food, admiring cats, caring for my plants, or exploring sports cars. I'm a calm, introverted person who values meaningful work, creativity, and building things that truly solve problems.
+
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -77,7 +73,7 @@ export default function About() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="https://majeedat.cv"
+                href="https://majeedat.cv/"
                 target="_blank"
                 className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white font-semibold rounded-md flex items-center justify-center px-6 py-3"
               >
