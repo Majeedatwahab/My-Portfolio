@@ -16,15 +16,14 @@ export default function Projects() {
 
         {
             "id": 1,
-            "title": "Bean-Scene Coffee Landing Page",
-            "description": "A sleek and modern coffee shop landing page designed to attract customers with an inviting UI and seamless navigation.",
-            "image": "/assets/cafe-landing-page.png",
+            "title": "Codext SaaS Landing Page",
+            "description": "A modern and responsive SaaS landing page designed to showcase Codext’s software solutions with a professional UI and smooth user experience.",
+            "image": "/assets/saas-landing.png",
             "category": "web",
-            "technologies": ["React", "Tailwind CSS"],
-            "demoUrl": "https://bean-scene-coffee-landing-page.vercel.app/",
-            "githubUrl": "https://github.com/Majeedatwahab/bean-scene-coffee-landing-page",
-            "fullDescription":
-                "Bean-Scene Coffee Landing Page is a visually engaging and fully responsive website that highlights premium coffee blends, features a beautifully designed menu, and encourages customer engagement through intuitive UI elements. Optimized for performance and accessibility, ensuring a delightful user experience."
+            "technologies": ["React", "Tailwind CSS", "Next.js"],
+            "demoUrl": "https://codext-saas-landing-page.vercel.app/",
+            "githubUrl": "https://github.com/Majeedatwahab/codext-saas-landing-page",
+            "fullDescription": "Codext SaaS Landing Page is a fully responsive and visually appealing website built to highlight Codext's software solutions. It features engaging hero sections, service highlights, pricing tables, testimonials, and blog previews. Optimized for performance, accessibility, and SEO, it ensures a seamless user experience across devices while effectively communicating Codext’s value proposition."
         },
 
         {

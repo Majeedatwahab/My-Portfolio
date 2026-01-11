@@ -10,34 +10,40 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
     {
-        id: 1,
-        title: "Bean-Scene Coffee Landing Page",
-        description: "A sleek and modern coffee shop landing page designed to attract customers with an inviting UI and seamless navigation.",
-        image: "/assets/cafe-landing-page.png",
-        fullDescription:
-            "This landing page was built to promote a coffee shop's online presence and drive in-store visits.",
-        technologies: ["React", "Tailwind CSS"],
-        demoUrl: "https://bean-scene-coffee-landing-page.vercel.app/",
-        githubUrl: "https://github.com/Majeedatwahab/bean-scene-coffee-landing-page",
-        purpose: [
-            "Create an immersive landing page experience.",
-            "Showcase modern UI with clean visuals.",
+        "id": 1,
+        "title": "Codext SaaS Landing Page",
+        "description": "A sleek and modern SaaS landing page designed to showcase Codext's software solutions with an engaging UI and seamless navigation.",
+        "image": "/assets/saas-landing.png",
+        "fullDescription": "This landing page was built to highlight Codext's software solutions, helping teams understand its features, pricing, and value proposition in a visually appealing and user-friendly way.",
+        "technologies": ["React", "Next.js", "Tailwind CSS"],
+        "demoUrl": "https://codext-saas-landing-page.vercel.app/",
+        "githubUrl": "https://github.com/Majeedatwahab/codext-saas-landing-page",
+        "purpose": [
+            "Showcase Codext's software solutions effectively.",
+            "Provide a clear and modern UI to engage potential customers.",
+            "Highlight services, pricing, testimonials, and blog content."
         ],
-        features: [
-            "Hero section with brand visuals",
-            "Smooth scrolling interactions",
-            "Menu preview layout",
-            "Clear call-to-action buttons",
+        "features": [
+            "Hero section with engaging headline and CTA",
+            "Smooth scrolling interactions for all sections",
+            "Service highlights with intuitive layout",
+            "Pricing tables and testimonial sections",
+            "Responsive design optimized for all devices",
+            "Clear call-to-action buttons throughout the page"
         ],
-        TechnicalHurdles: [
-            "Balancing the layout across all screen sizes",
-            "Maintaining sharp image quality while optimizing load time",
+        "TechnicalHurdles": [
+            "Creating a responsive layout that works seamlessly across devices",
+            "Optimizing performance while using high-quality images and animations",
+            "Ensuring smooth scrolling and section linking in a SPA environment"
         ],
-        LessonsLearned: [
-            "Improved Tailwind component structuring",
-            "Mastered gradient overlays for hero sections",
-        ],
+        "LessonsLearned": [
+            "Improved structuring of React components and Tailwind styling",
+            "Enhanced understanding of responsive design for SaaS applications",
+            "Learned how to integrate smooth scrolling and section linking in Next.js",
+            "Gained experience designing professional SaaS landing pages"
+        ]
     },
+
 
     {
         id: 2,
